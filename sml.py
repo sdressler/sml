@@ -5,7 +5,8 @@ import json, os, subprocess, sys, argparse
 class SML:
 	"""The SML class"""
 	def __init__(self):
-		f = open('sml.json')
+		f = os.path.expanduser('~/.sml.json')
+		f = open(f)
 		self.data = json.load(f)
 		f.close()
 
@@ -47,9 +48,6 @@ class SML:
 
 
 sml = SML()
-#SML.listModules()
-#sml.loadModule("llvm", "svn-release");
-#sml.unloadModule("llvm", "svn-release")
 
 parser = argparse.ArgumentParser(prog='Prog')
 group = parser.add_mutually_exclusive_group(required=True)
@@ -58,8 +56,6 @@ group.add_argument('--unload', nargs=2, metavar=('module', 'version'), help='unl
 group.add_argument('--list', action='store_true', help='list all modules')
 
 args = parser.parse_args()
-
-#print args
 
 if args.list:
 	sml.listModules()
