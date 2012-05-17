@@ -1,0 +1,22 @@
+{
+	"llvm": {
+        "svn-release": {
+            "base": "/opt/llvm/svn-release",
+	        "lib": "/lib",
+			"bin": "/bin"
+	    },
+		"svn-debug": {
+			"base": "/opt/llvm/svn-debug",
+			"lib": "/lib",
+			"bin": "/bin"
+		}
+	},
+
+	"gcc" : {
+		"4.5.3" : {
+			"base" : "/opt/gcc/4.5.3/",
+			"bin"  : "bin/",
+			"lib"  : "lib64/"
+		}
+	}
+}
