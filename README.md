@@ -12,12 +12,12 @@ Warning #2: Read warning #1, file an issue report when something goes wrong, but
 
 1. Copy sml.json.example to ~/.sml.json an edit it, syntax is pure JSON
 2. Copy sml.sh and sml.py to a location where you can execute from, e.g. /usr/local/bin
-3. Put alias sml=`source sml.sh` into your .{bash,zsh}rc or wherever it fits
+3. Put `alias sml="source sml.sh" into your .{bash,zsh}rc or wherever it fits
 4. Run sml
 
 # Changelog
 
-## 0.1, 2012-05-17
+### 0.1, 2012-05-17
 
 - Support loading and unloading modules
 - Installation yet by hand
